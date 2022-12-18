@@ -18,7 +18,6 @@ import RootNavigator from './src/navigation/rootNavigator';
 import InternalProfileView from './src/userProfile/internalProfileView';
 import EditProfile from './src/userProfile/editProfile';
 import PrivateModal from './src/userProfile/privateModal';
-import CameraPost from './src/post/cameraPost';
 import NewPost from './src/post/newPost';
 
 const App = () => {
@@ -42,12 +41,12 @@ const App = () => {
     return <Splash />;
   } else {
     return (
-      <NewPost />
+      // <NewPost />
       // <CameraPost />
       // <PrivateModal />
       // <EditProfile />
       // <InternalProfileView />
-      // <RootNavigator />
+      <RootNavigator />
     );
   }
 };

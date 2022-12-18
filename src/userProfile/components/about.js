@@ -10,7 +10,15 @@ import {
 import Interests from '../../signup/components/interests';
 import AntIcons from 'react-native-vector-icons/AntDesign';
 
-const About = ({message, lineDescription, age, dob, btnTitle}) => {
+const About = ({
+  message,
+  lineDescription,
+  age,
+  dob,
+  btnTitle,
+  pressHandler,
+  navigation,
+}) => {
   const interests = ['Menopause', 'Pre-menopause'];
 
   return (
@@ -33,9 +41,7 @@ const About = ({message, lineDescription, age, dob, btnTitle}) => {
         <AntIcons name="calendar" color={'#754845'} size={19} />
         <Text style={styles.standardText}>{dob}</Text>
       </View>
-      <TouchableOpacity
-        style={styles.editProfileBtn}
-        onPress={() => setFollow(true)}>
+      <TouchableOpacity style={styles.editProfileBtn} onPress={pressHandler}>
         <Text style={[styles.standardText, {color: 'white'}]}>{btnTitle}</Text>
       </TouchableOpacity>
     </View>

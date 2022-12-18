@@ -13,6 +13,8 @@ const InternalProfileView = ({navigation}) => {
       <Header userName={'Amanda'} />
       <Profile />
       <About
+        pressHandler={() => navigation.navigate('EditProfile')}
+        navigation={navigation}
         message={'My message to My S Life Community'}
         lineDescription={
           'line description will be here. Lorem ipsum dolor sit amet, consecteturdskdlk adipisicing elit, sed do'

@@ -2,6 +2,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import OnBoarding from '../onBoarding/onBoarding';
 import SignUp from '../signup/signup';
+import BottomTabNavigator from './bottomTabNavigator';
 import LoginNavigation from './loginNavigation';
 import SignupNavigation from './signupNavigation';
 
@@ -24,6 +25,11 @@ const RootNavigator = () => {
         <Stack.Screen
           name="SignupNavigation"
           component={SignupNavigation}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Tab"
+          component={BottomTabNavigator}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

@@ -1,6 +1,6 @@
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
-const WelcomeSignup = () => {
+const WelcomeSignup = ({navigation}) => {
   return (
     <View style={styles.mainContainer}>
       <View style={{marginTop: 190}}>
@@ -11,7 +11,7 @@ const WelcomeSignup = () => {
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       </Text>
       <TouchableOpacity
-        onPress={() => navigation.navigate('')}
+        onPress={() => navigation.navigate('Tab', {screen: 'Post'})}
         style={{marginTop: 'auto', marginBottom: 30}}>
         <Text style={styles.skipText}>Skip</Text>
       </TouchableOpacity>

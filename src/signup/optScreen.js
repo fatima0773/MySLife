@@ -1,5 +1,11 @@
 import {useState} from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import CustomBtn from '../login/components/customBtn';
 
 const OtpScreen = ({navigation}) => {
@@ -10,6 +16,9 @@ const OtpScreen = ({navigation}) => {
         A verification code has been sent to your registered phone number.
         Please enter the number below
       </Text>
+      <TextInput
+        keyboardType="numeric"
+        style={styles.otpInputField}></TextInput>
       <Text
         style={[
           styles.subText,
@@ -66,6 +75,20 @@ const styles = StyleSheet.create({
     lineHeight: 20,
     textAlign: 'center',
     paddingHorizontal: 30,
+  },
+  otpInputField: {
+    borderRadius: 5,
+    borderWidth: 1,
+    borderColor: '#E0E0E0',
+    backgroundColor: '#F8F8F8',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    fontSize: 25,
+    fontFamily: 'Spartan-Bold',
+    color: 'black',
+    width: '60%',
+    marginTop: 30,
+    textAlign: 'center',
   },
 });
 
