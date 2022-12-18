@@ -18,6 +18,8 @@ import RootNavigator from './src/navigation/rootNavigator';
 import InternalProfileView from './src/userProfile/internalProfileView';
 import EditProfile from './src/userProfile/editProfile';
 import PrivateModal from './src/userProfile/privateModal';
+import CameraPost from './src/post/cameraPost';
+import NewPost from './src/post/newPost';
 
 const App = () => {
   const [showSplash, setShowSplash] = useState(true);
@@ -40,20 +42,12 @@ const App = () => {
     return <Splash />;
   } else {
     return (
-      <PrivateModal />
+      <NewPost />
+      // <CameraPost />
+      // <PrivateModal />
       // <EditProfile />
       // <InternalProfileView />
       // <RootNavigator />
-      // <WelcomeSignup />
-      // <OtpScreen />
-      // <TermsAndCondition />
-      // <SignupDetails />
-      // <SignUp />
-      // <WelcomeLogin />
-      // <NewPassword />
-      // <ForgotPassword />
-      // <SignIn />
-      // <OnBoarding />
     );
   }
 };

@@ -1,16 +1,4 @@
-import {
-  Dimensions,
-  FlatList,
-  Image,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import Interests from '../signup/components/interests';
-import AntIcons from 'react-native-vector-icons/AntDesign';
+import {Dimensions, ScrollView, StyleSheet} from 'react-native';
 import SinglePost from './components/singlePost';
 import Header from './components/header';
 import Profile from './components/profile';

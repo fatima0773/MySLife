@@ -1,5 +1,4 @@
 import {
-  Dimensions,
   FlatList,
   Image,
   StyleSheet,
@@ -7,13 +6,9 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+
 import Interests from '../../signup/components/interests';
 import AntIcons from 'react-native-vector-icons/AntDesign';
-import {useState} from 'react';
-
-const windowWidth = Dimensions.get('window').width;
-const windowHeight = Dimensions.get('window').height;
 
 const About = ({message, lineDescription, age, dob, btnTitle}) => {
   const interests = ['Menopause', 'Pre-menopause'];
